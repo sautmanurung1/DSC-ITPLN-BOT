@@ -1,6 +1,5 @@
 const ytdl = require('ytdl-core');
 const ytSearch = require('yt-search');
-const regex = require('ansi-regex');
 module.exports = {
     name: 'play',
     description: 'Joins and plays a video from youtube',
