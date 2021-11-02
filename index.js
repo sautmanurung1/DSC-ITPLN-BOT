@@ -39,3 +39,7 @@ client.on('message', async msg => {
             break;
     }
 })
+
+client.login(TOKEN);
+
+process.on('unhandledRejection', console.error);
