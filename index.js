@@ -40,6 +40,7 @@ client.on('message', async msg => {
             break;
         case "play":
             commands.get('play').execute(msg);
+            break;
     }
 })
 
