@@ -9,6 +9,11 @@
   "author": "Saut Manurung",
   "license": "MIT",
   "dependencies": {
-    "discord.js": "^12.5.3"
+    "canvacord": "^5.2.3",
+    "discord.js": "^12.5.3",
+    "ffmpeg-static": "^4.4.0",
+    "opusscript": "0.0.8",
+    "yt-search": "^2.10.0",
+    "ytdl-core": "^4.9.1"
   }
 }
