@@ -39,7 +39,7 @@ client.on('message', async msg => {
             commands.get('ping').execute(msg);
             break;
         case "play":
-            commands.get('play').execute(msg);
+            commands.get('play').execute(msg, args);
             break;
     }
 })
