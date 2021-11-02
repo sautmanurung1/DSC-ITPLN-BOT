@@ -3,6 +3,7 @@ const { Client, MessageAttachment } = require('discord.js');
 const client = new Client({ disableEveryone: true, partials: ["MESSAGE", "CHANNEL", "REACTION"] });
 const PREFIX = '-';
 const TOKEN = process.env.DISCORD_TOKEN;
+const { execute } = require('./commands/play');
 const fs = require('fs');
 const commands = new Discord.Collection();
 const files = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
@@ -37,6 +38,8 @@ client.on('message', async msg => {
         case "ping":
             commands.get('ping').execute(msg);
             break;
+        case "play":
+            commands.get('play').execute(msg);
     }
 })
 
