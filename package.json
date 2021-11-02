@@ -10,6 +10,7 @@
   "author": "Saut Manurung",
   "license": "MIT",
   "dependencies": {
+    "ansi-regex": "^6.0.1",
     "canvacord": "^5.2.3",
     "discord.js": "^12.5.3",
     "dotenv": "^10.0.0",
